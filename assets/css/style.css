@@ -1,17 +1,49 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap");
 
-body{
+
+:root{
+    --red:hsl(0, 100%, 67%);
+    --yellow:hsl(39, 100%, 56%);
+    --green:hsl(166, 100%, 37%);
+    --blue:hsl(234, 85%, 45%);
+    --light-red:rgba(255, 87, 87, 0.1);
+    --light-yellow:hsla(39, 100%, 56%,0.1);
+    --light-green:hsla(166, 100%, 37%,0.1);
+    --light-blue:hsla(234, 85%, 45%,0.1);
     font-family: 'Outfit';
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.my-10{
+    margin: 10px 0;
+}
+
+.p-10{
+    padding: 10px;
+}
+.py-10{
+    padding:10px 0;
+}
+
+.right{
+    float: right;
+}
+
+.rounded-5{
+    border-radius: 5px;
+}
+
+.text-bold{
+    font-weight: 800;
+}
+
+.text-thin{
+    font-weight: 300;
 }
 
 main{
     background-color: white;
-}
-
-.card{
-    background-color: white;
-    box-shadow: 0 20px 20px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,9 +51,19 @@ main{
     height: 100vh;
 }
 
+.card{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 20px 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    width:400px;
+    height: auto;
+}
+
 .result{
-    width: 300px;
-    padding: 40px;
+    width: 200px;
+    padding: 20px;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(241, 100%, 89%);
     text-align: center;
@@ -33,18 +75,17 @@ main{
     height:150px;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    margin: auto;
+    margin: 30px auto;
     text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .points{
     color: white;
     font-size: 50px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
 .total{
@@ -56,5 +97,33 @@ main{
 }
 
 .summary{
-    width: 300px;
+    width: 200px;
+    padding: 20px;
+    justify-content: first baseline;
+}
+
+.text-red{
+    color:var(--red);
+}
+.text-yellow{
+    color:var(--yellow);
+}
+.text-green{
+    color:var(--green);
+}
+.text-blue{
+    color:var(--blue);
+}
+
+.bg-light-red{
+    background-color:var(--light-red);
+}
+.bg-light-yellow{
+    background-color:var(--light-yellow);
+}
+.bg-light-green{
+    background-color:var(--light-green);
+}
+.bg-light-blue{
+    background-color:var(--light-blue);
 }
