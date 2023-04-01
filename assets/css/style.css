@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 
 :root{
@@ -10,9 +10,9 @@
     --light-yellow:hsla(39, 100%, 56%,0.1);
     --light-green:hsla(166, 100%, 37%,0.1);
     --light-blue:hsla(234, 85%, 45%,0.1);
-    font-family: 'Outfit';
-    font-size: 15px;
-    font-weight: 500;
+    font-family: 'Hanken Grotesk';
+    font-size: 18px;
+    font-weight: 700;
 }
 
 .my-10{
@@ -22,6 +22,11 @@
 .p-10{
     padding: 10px;
 }
+
+.p-20{
+    padding: 20px;
+}
+
 .py-10{
     padding:10px 0;
 }
@@ -39,7 +44,7 @@
 }
 
 .text-thin{
-    font-weight: 300;
+    font-weight: 500;
 }
 
 main{
@@ -54,16 +59,16 @@ main{
 .card{
     background-color: white;
     border-radius: 25px;
-    box-shadow: 0 20px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 20px 10px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: row;
-    width:400px;
+    width:740px;
     height: auto;
 }
 
 .result{
-    width: 200px;
-    padding: 20px;
+    width: 370px;
+    padding: 40px 60px;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(241, 100%, 89%);
     text-align: center;
@@ -71,8 +76,8 @@ main{
 }
 
 .score{
-    width:150px;
-    height:150px;
+    width:200px;
+    height:200px;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin: 30px auto;
@@ -85,7 +90,7 @@ main{
 
 .points{
     color: white;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .total{
@@ -93,13 +98,48 @@ main{
 }
 
 .grade{
+    font-size: 32px;
     color: white;
 }
 
 .summary{
-    width: 200px;
-    padding: 20px;
+    width: 370px;
+    padding: 40px;
     justify-content: first baseline;
+}
+
+.detail{
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    vertical-align: middle;
+    position: relative;
+}
+
+span{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+button{
+    margin: 10px 0;
+    padding: 20px 100px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: hsl(224, 30%, 27%);
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+button:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.text-medium{
+    font-size: 24px;
+}
+.text-large{
+    font-size: 32px;
 }
 
 .text-red{
