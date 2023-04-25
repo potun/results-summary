@@ -2,6 +2,9 @@
 
 
 :root{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     --red:hsl(0, 100%, 67%);
     --yellow:hsl(39, 100%, 56%);
     --green:hsl(166, 100%, 37%);
@@ -15,6 +18,10 @@
     font-weight: 700;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 .my-10{
     margin: 10px 0;
 }
@@ -48,11 +55,13 @@
 }
 
 main{
+    margin: auto;
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    width: 60vw;
     height: 100vh;
 }
 
@@ -67,7 +76,7 @@ main{
 }
 
 .result{
-    width: 370px;
+    width: 300px;
     padding: 40px 60px;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     color: hsl(241, 100%, 89%);
@@ -165,4 +174,24 @@ button:hover{
 }
 .bg-light-blue{
     background-color:var(--light-blue);
+}
+
+@media only screen and (max-width: 600px) {
+    main{
+        width: 100vw;
+        margin: 0;
+        align-items: baseline;
+    }
+    .card {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .result {
+        width: 100vw;
+        border-radius: 0 0 20px 20px;
+    }
+    .summary{
+        width: 100vw;
+    }
 }
