@@ -1,60 +1,63 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
 
 
-:root{
+:root {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    --red:hsl(0, 100%, 67%);
-    --yellow:hsl(39, 100%, 56%);
-    --green:hsl(166, 100%, 37%);
-    --blue:hsl(234, 85%, 45%);
-    --light-red:rgba(255, 87, 87, 0.1);
-    --light-yellow:hsla(39, 100%, 56%,0.1);
-    --light-green:hsla(166, 100%, 37%,0.1);
-    --light-blue:hsla(234, 85%, 45%,0.1);
+    --red: 0, 100%, 67%;
+    --yellow: hsl(39, 100%, 56%);
+    --green: hsl(166, 100%, 37%);
+    --blue: hsl(234, 85%, 45%);
+    --light-red: rgba(255, 87, 87, 0.1);
+    --light-yellow: hsla(39, 100%, 56%, 0.1);
+    --light-green: hsla(166, 100%, 37%, 0.1);
+    --light-blue: hsla(234, 85%, 45%, 0.1);
     font-family: 'Hanken Grotesk';
     font-size: 18px;
-    font-weight: 700;
+    --font-thin: 500;
+    --font-regular: 700;
+    --font-bold: 800;
 }
 
 body {
     margin: 0;
     padding: 0;
 }
-.my-10{
+
+.my-10 {
     margin: 10px 0;
 }
 
-.p-10{
+.p-10 {
     padding: 10px;
 }
 
-.p-20{
+.p-20 {
     padding: 20px;
 }
 
-.py-10{
-    padding:10px 0;
+.py-10 {
+    padding: 10px 0;
 }
 
-.right{
+.right {
     float: right;
 }
 
-.rounded-5{
+.rounded-5 {
     border-radius: 5px;
 }
 
-.text-bold{
+.text-bold {
     font-weight: 800;
 }
 
-.text-thin{
+.text-thin {
     font-weight: 500;
 }
 
-main{
+main {
     margin: auto;
     background-color: white;
     display: flex;
@@ -65,17 +68,17 @@ main{
     height: 100vh;
 }
 
-.card{
+.card {
     background-color: white;
     border-radius: 25px;
-    box-shadow: 10px 20px 10px rgba(0,0,0,0.1);
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: row;
-    width:740px;
+    width: 740px;
     height: auto;
 }
 
-.result{
+.result {
     width: 300px;
     padding: 40px 60px;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -84,9 +87,9 @@ main{
     border-radius: 25px;
 }
 
-.score{
-    width:200px;
-    height:200px;
+.score {
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     margin: 30px auto;
@@ -97,39 +100,39 @@ main{
     justify-content: center;
 }
 
-.points{
+.points {
     color: white;
     font-size: 60px;
 }
 
-.total{
+.total {
     color: hsl(241, 100%, 89%);
 }
 
-.grade{
+.grade {
     font-size: 32px;
     color: white;
 }
 
-.summary{
+.summary {
     width: 370px;
     padding: 40px;
     justify-content: first baseline;
 }
 
-.detail{
+.detail {
     padding: 15px;
     margin: 20px 0;
     border-radius: 10px;
     vertical-align: middle;
 }
 
-span{
+span {
     display: inline-block;
     vertical-align: middle;
 }
 
-button{
+button {
     margin: 10px 0;
     padding: 20px 100px;
     border-radius: 30px;
@@ -139,59 +142,108 @@ button{
     font-weight: 500;
     color: white;
 }
-button:hover{
+
+button:hover {
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 
-.text-medium{
+.text-medium {
     font-size: 24px;
 }
-.text-large{
+
+.text-large {
     font-size: 32px;
 }
 
-.text-red{
-    color:var(--red);
-}
-.text-yellow{
-    color:var(--yellow);
-}
-.text-green{
-    color:var(--green);
-}
-.text-blue{
-    color:var(--blue);
+.text-red {
+    color: var(--red);
 }
 
-.bg-light-red{
-    background-color:var(--light-red);
+.text-yellow {
+    color: var(--yellow);
 }
-.bg-light-yellow{
-    background-color:var(--light-yellow);
+
+.text-green {
+    color: var(--green);
 }
-.bg-light-green{
-    background-color:var(--light-green);
+
+.text-blue {
+    color: var(--blue);
 }
-.bg-light-blue{
-    background-color:var(--light-blue);
+
+.bg-light-red {
+    background-color: var(--light-red);
+}
+
+.bg-light-yellow {
+    background-color: var(--light-yellow);
+}
+
+.bg-light-green {
+    background-color: var(--light-green);
+}
+
+.bg-light-blue {
+    background-color: var(--light-blue);
 }
 
 @media only screen and (max-width: 600px) {
-    main{
+    main {
         width: 100vw;
         margin: 0;
         align-items: baseline;
     }
+
     .card {
         width: 100vw;
         display: flex;
         flex-direction: column;
     }
+
     .result {
         width: 100vw;
         border-radius: 0 0 20px 20px;
     }
-    .summary{
+
+    .summary {
         width: 100vw;
     }
+}
+
+
+.flex-group {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-radius: .5rem;
+    background-color: hsla(var(--item-color), 0.1);
+}
+
+.summary-item svg {
+    stroke: hsl(var(--item-color));
+}
+
+.summary-item-title {
+    color: hsl(var(--item-color));
+    font-weight: var(--fw-bold);
+}
+
+.summary-item[data-item-type="red"] {
+    --item-color: var(--red);
+}
+
+.summary-score {
+    font-weight: var(--font-bold);
+    color: hsl(224, 30%, 27%, .5);
+}
+
+.summary-score span {
+    color: hsl(224, 30%, 27%);
 }
