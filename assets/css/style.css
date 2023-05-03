@@ -185,11 +185,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-    :root {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        -webkit-box-sizing: border-box;
-    }
+
     main {
         width: 100%;
         align-items: baseline;
